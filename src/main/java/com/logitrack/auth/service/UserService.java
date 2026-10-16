@@ -38,6 +38,6 @@ public class UserService {
                 )
         );
 
-        return new UserRegisterResponse(user.getEmail(), user.getFullName(),  user.getRole());
+        return UserRegisterResponse.from(user);
     }
 }
